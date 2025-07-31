@@ -1,0 +1,168 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Welcome Groups Design System - Real Estate Brand
+All colors MUST be HSL.
+Brand Colors:
+- Primary (Dark Teal): #1D4F4E → 179 44% 21%
+- Accent (Green): #4CAF50 → 122 39% 49%
+- Background: #FFFFFF → 0 0% 100%
+- Light Gray: #F5F5F5 → 0 0% 96%
+- Light Green: #A5D6A7 → 125 39% 76%
+*/
+
+@layer base {
+  :root {
+    /* Brand Colors */
+    --brand-primary: 179 44% 21%;           /* Dark Teal #1D4F4E */
+    --brand-accent: 122 39% 49%;            /* Green #4CAF50 */
+    --brand-accent-light: 125 39% 76%;      /* Light Green #A5D6A7 */
+    --brand-neutral-light: 0 0% 96%;        /* Light Gray #F5F5F5 */
+    
+    /* Base System Colors */
+    --background: 0 0% 100%;                /* Pure White */
+    --foreground: 179 44% 21%;              /* Dark Teal for text */
+
+    --card: 0 0% 100%;                      /* White cards */
+    --card-foreground: 179 44% 21%;         /* Dark teal text on cards */
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 179 44% 21%;
+
+    --primary: 179 44% 21%;                 /* Dark Teal */
+    --primary-foreground: 0 0% 100%;        /* White text on primary */
+
+    --secondary: 0 0% 96%;                  /* Light Gray sections */
+    --secondary-foreground: 179 44% 21%;    /* Dark teal on secondary */
+
+    --muted: 0 0% 96%;                      /* Light Gray */
+    --muted-foreground: 179 30% 35%;        /* Muted teal */
+
+    --accent: 122 39% 49%;                  /* Green accent */
+    --accent-foreground: 0 0% 100%;         /* White on accent */
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 179 20% 85%;                  /* Light teal borders */
+    --input: 179 20% 85%;
+    --ring: 122 39% 49%;                    /* Green focus ring */
+
+    --radius: 0.75rem;
+    
+    /* Custom Brand Variables */
+    --hero-gradient: linear-gradient(135deg, hsl(179 44% 21%) 0%, hsl(179 44% 26%) 100%);
+    --section-highlight: var(--brand-neutral-light);
+    --accent-highlight: var(--brand-accent-light);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body;
+  }
+  
+  /* Typography Classes */
+  .font-heading {
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .font-body {
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  /* Smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Custom animations */
+  .fade-in {
+    animation: fadeIn 0.6s ease-out;
+  }
+  
+  .slide-up {
+    animation: slideUp 0.8s ease-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
