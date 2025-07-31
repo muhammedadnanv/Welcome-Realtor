@@ -25,25 +25,27 @@ const Header = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
+          <Link to="/" className="flex items-center space-x-2" aria-label="Welcome Groups Home">
             <img 
               src="/lovable-uploads/dee13c0c-920d-4e30-af96-1a1272dc5dce.png" 
-              alt="Welcome Realtor" 
+              alt="Welcome Groups - Real Estate Excellence" 
               className="h-12 w-auto"
+              loading="eager"
             />
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-8">
+          <nav className="hidden md:flex space-x-8" role="navigation" aria-label="Main navigation">
             {navigation.map((item) => (
               <Link
                 key={item.name}
                 to={item.href}
-                className={`text-sm font-medium transition-colors hover:text-accent ${
+                className={`text-sm font-medium transition-colors hover:text-accent focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 rounded-sm px-2 py-1 ${
                   isActive(item.href)
                     ? "text-accent font-semibold"
                     : "text-muted-foreground"
                 }`}
+                aria-current={isActive(item.href) ? "page" : undefined}
               >
                 {item.name}
               </Link>
@@ -69,18 +71,19 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden">
+          <div className="md:hidden" role="navigation" aria-label="Mobile navigation">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-secondary/50 rounded-lg mt-2">
               {navigation.map((item) => (
                 <Link
                   key={item.name}
                   to={item.href}
-                  className={`block px-3 py-2 text-base font-medium transition-colors hover:text-accent rounded-md ${
+                  className={`block px-3 py-2 text-base font-medium transition-colors hover:text-accent rounded-md focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 ${
                     isActive(item.href)
                       ? "text-accent font-semibold bg-brand-neutral-light"
                       : "text-muted-foreground"
                   }`}
                   onClick={() => setIsMenuOpen(false)}
+                  aria-current={isActive(item.href) ? "page" : undefined}
                 >
                   {item.name}
                 </Link>

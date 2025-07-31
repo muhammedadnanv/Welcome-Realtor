@@ -140,8 +140,12 @@ const Brands = () => {
                   <div className="w-20 h-20 mr-6 flex items-center justify-center">
                     <img 
                       src="/welcome-rental-cars-logo.png" 
-                      alt="Welcome Rental Cars" 
+                      alt="Welcome Rental Cars Logo - Premium car rental services" 
                       className="max-w-full max-h-full object-contain"
+                      loading="lazy"
+                      onError={(e) => {
+                        (e.target as HTMLImageElement).style.display = 'none';
+                      }}
                     />
                   </div>
                   <div>
@@ -182,8 +186,12 @@ const Brands = () => {
                   <div className="w-20 h-20 mr-6 flex items-center justify-center">
                     <img 
                       src="/welcome-tours-logo.png" 
-                      alt="Welcome International Tours and Travels" 
+                      alt="Welcome International Tours and Travels Logo - Travel and tourism services" 
                       className="max-w-full max-h-full object-contain"
+                      loading="lazy"
+                      onError={(e) => {
+                        (e.target as HTMLImageElement).style.display = 'none';
+                      }}
                     />
                   </div>
                   <div>
@@ -294,8 +302,12 @@ const Brands = () => {
                 <div className="flex justify-center">
                   <img 
                     src="/welcome-group-logo.png" 
-                    alt="Welcome Group Logo" 
+                    alt="Welcome Group Logo - Parent company umbrella brand" 
                     className="h-24 w-auto object-contain"
+                    loading="lazy"
+                    onError={(e) => {
+                      (e.target as HTMLImageElement).style.display = 'none';
+                    }}
                   />
                 </div>
                 <h3 className="text-3xl font-heading font-bold text-primary">
@@ -333,8 +345,9 @@ const Brands = () => {
                 <div className="mb-6">
                   <img 
                     src={muhammadWelcome} 
-                    alt="Muhammad Welcome" 
+                    alt="Muhammad Welcome - Chairman of Welcome Groups" 
                     className="w-32 h-32 rounded-full mx-auto object-cover shadow-lg"
+                    loading="lazy"
                   />
                 </div>
                 <h3 className="text-2xl font-heading font-bold text-primary mb-2">
@@ -356,8 +369,9 @@ const Brands = () => {
                 <div className="mb-6">
                   <img 
                     src={sabirChabu} 
-                    alt="Sabir Chabu" 
+                    alt="Sabir Chabu - Director of Welcome Groups" 
                     className="w-32 h-32 rounded-full mx-auto object-cover shadow-lg"
+                    loading="lazy"
                   />
                 </div>
                 <h3 className="text-2xl font-heading font-bold text-primary mb-2">
@@ -379,8 +393,9 @@ const Brands = () => {
                 <div className="mb-6">
                   <img 
                     src={samsiWelcome} 
-                    alt="Samsi Welcome" 
+                    alt="Samsi Welcome - Managing Director of Welcome Groups" 
                     className="w-32 h-32 rounded-full mx-auto object-cover shadow-lg"
+                    loading="lazy"
                   />
                 </div>
                 <h3 className="text-2xl font-heading font-bold text-primary mb-2">
