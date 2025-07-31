@@ -66,9 +66,7 @@ const Footer = () => {
             <p className="text-primary-foreground/60 text-sm">
               © 2024 Welcome Groups. All rights reserved.
             </p>
-            <p className="text-primary-foreground/60 text-sm">
-              Real Estate License #123456789
-            </p>
+            
           </div>
         </div>
       </div>
