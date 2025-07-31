@@ -134,7 +134,7 @@ const Brands = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Welcome Rental Cars */}
-            <Card className="border-none bg-background shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+            <Card className="border-none bg-background shadow-lg transition-all duration-300">
               <CardContent className="p-8">
                 <div className="flex items-center mb-6">
                   <div className="w-20 h-20 mr-6 flex items-center justify-center">
@@ -180,7 +180,7 @@ const Brands = () => {
             </Card>
 
             {/* Welcome Tours and Travels */}
-            <Card className="border-none bg-background shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+            <Card className="border-none bg-background shadow-lg transition-all duration-300">
               <CardContent className="p-8">
                 <div className="flex items-center mb-6">
                   <div className="w-20 h-20 mr-6 flex items-center justify-center">
@@ -340,7 +340,7 @@ const Brands = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {/* Chairman */}
-            <Card className="text-center bg-background shadow-lg hover:shadow-xl transition-shadow">
+            <Card className="text-center bg-background shadow-lg transition-shadow">
               <CardContent className="p-8">
                 <div className="mb-6">
                   <img 
@@ -364,7 +364,7 @@ const Brands = () => {
             </Card>
 
             {/* Director */}
-            <Card className="text-center bg-background shadow-lg hover:shadow-xl transition-shadow">
+            <Card className="text-center bg-background shadow-lg transition-shadow">
               <CardContent className="p-8">
                 <div className="mb-6">
                   <img 
@@ -388,7 +388,7 @@ const Brands = () => {
             </Card>
 
             {/* Managing Director */}
-            <Card className="text-center bg-background shadow-lg hover:shadow-xl transition-shadow">
+            <Card className="text-center bg-background shadow-lg transition-shadow">
               <CardContent className="p-8">
                 <div className="mb-6">
                   <img 
@@ -428,7 +428,7 @@ const Brands = () => {
             <Button size="lg" variant="secondary">
               Contact Welcome Realtors
             </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-primary">
+            <Button size="lg" variant="outline" className="border-white text-white">
               Explore All Services
             </Button>
           </div>

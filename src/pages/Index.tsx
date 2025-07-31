@@ -49,12 +49,12 @@ const Index = () => {
             Discover your dream property with Welcome Groups.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center slide-up">
-            <Button size="lg" variant="default" className="bg-accent hover:bg-accent/90" asChild>
+            <Button size="lg" variant="default" className="bg-accent" asChild>
               <Link to="/contact">
                 Get Started <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-primary" asChild>
+            <Button size="lg" variant="outline" className="border-white text-white" asChild>
               <Link to="/about">
                 Learn More
               </Link>
@@ -80,7 +80,7 @@ const Index = () => {
             {features.map((feature, index) => {
               const Icon = feature.icon;
               return (
-                <Card key={index} className="border-border hover:shadow-lg transition-shadow duration-300">
+                <Card key={index} className="border-border shadow-lg transition-shadow duration-300">
                   <CardContent className="p-8 text-center">
                     <div className="w-16 h-16 mx-auto mb-6 bg-accent/10 rounded-full flex items-center justify-center">
                       <Icon className="h-8 w-8 text-accent" />

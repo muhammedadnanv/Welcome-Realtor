@@ -129,7 +129,7 @@ const Contact = () => {
             {contactInfo.map((info, index) => {
               const Icon = info.icon;
               return (
-                <Card key={index} className="text-center border-border hover:shadow-lg transition-shadow duration-300">
+                <Card key={index} className="text-center border-border shadow-lg transition-shadow duration-300">
                   <CardContent className="p-8">
                     <div className="w-16 h-16 mx-auto mb-6 bg-accent/10 rounded-full flex items-center justify-center">
                       <Icon className="h-8 w-8 text-accent" />

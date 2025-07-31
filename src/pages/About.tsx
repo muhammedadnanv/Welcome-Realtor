@@ -142,7 +142,7 @@ const About = () => {
             {values.map((value, index) => {
               const Icon = value.icon;
               return (
-                <Card key={index} className="text-center border-none bg-background shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <Card key={index} className="text-center border-none bg-background shadow-lg transition-shadow duration-300">
                   <CardContent className="p-8">
                     <div className="w-16 h-16 mx-auto mb-6 bg-accent/10 rounded-full flex items-center justify-center">
                       <Icon className="h-8 w-8 text-accent" />

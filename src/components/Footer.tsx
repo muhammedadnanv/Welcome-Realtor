@@ -19,16 +19,16 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="text-lg font-heading font-semibold">Quick Links</h3>
             <nav className="flex flex-col space-y-2">
-              <Link to="/" className="text-primary-foreground/80 hover:text-accent transition-colors text-sm">
+              <Link to="/" className="text-primary-foreground/80 transition-colors text-sm">
                 Home
               </Link>
-              <Link to="/about" className="text-primary-foreground/80 hover:text-accent transition-colors text-sm">
+              <Link to="/about" className="text-primary-foreground/80 transition-colors text-sm">
                 About Us
               </Link>
-              <Link to="/brands" className="text-primary-foreground/80 hover:text-accent transition-colors text-sm">
+              <Link to="/brands" className="text-primary-foreground/80 transition-colors text-sm">
                 Our Other Brands
               </Link>
-              <Link to="/contact" className="text-primary-foreground/80 hover:text-accent transition-colors text-sm">
+              <Link to="/contact" className="text-primary-foreground/80 transition-colors text-sm">
                 Contact Us
               </Link>
             </nav>
