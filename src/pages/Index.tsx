@@ -3,51 +3,46 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight, Building, Users, Award, CheckCircle } from "lucide-react";
 import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-image.jpg";
-
 const Index = () => {
-  const features = [
-    {
-      icon: Building,
-      title: "Expert Real Estate Services",
-      description: "Professional guidance through every step of your real estate journey."
-    },
-    {
-      icon: Users,
-      title: "Trusted by Thousands",
-      description: "Building lasting relationships with clients across the region."
-    },
-    {
-      icon: Award,
-      title: "Award-Winning Team",
-      description: "Recognized excellence in real estate services and customer satisfaction."
-    }
-  ];
-
-  const stats = [
-    { number: "500+", label: "Properties Sold" },
-    { number: "15+", label: "Years Experience" },
-    { number: "98%", label: "Client Satisfaction" },
-    { number: "50+", label: "Team Members" }
-  ];
-
-  return (
-    <div className="min-h-screen">
+  const features = [{
+    icon: Building,
+    title: "Expert Real Estate Services",
+    description: "Professional guidance through every step of your real estate journey."
+  }, {
+    icon: Users,
+    title: "Trusted by Thousands",
+    description: "Building lasting relationships with clients across the region."
+  }, {
+    icon: Award,
+    title: "Award-Winning Team",
+    description: "Recognized excellence in real estate services and customer satisfaction."
+  }];
+  const stats = [{
+    number: "500+",
+    label: "Properties Sold"
+  }, {
+    number: "15+",
+    label: "Years Experience"
+  }, {
+    number: "98%",
+    label: "Client Satisfaction"
+  }, {
+    number: "50+",
+    label: "Team Members"
+  }];
+  return <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(${heroImage})` }}
-        />
+        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
+        backgroundImage: `url(${heroImage})`
+      }} />
         <div className="absolute inset-0 bg-primary/60" />
         
         <div className="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-heading font-bold mb-6 fade-in">
             Welcome to <span className="text-accent">Excellence</span> in Real Estate
           </h1>
-          <p className="text-xl md:text-2xl font-light mb-8 slide-up opacity-90">
-            Your trusted partner for exceptional real estate services. 
-            Discover your dream property with Welcome Groups.
-          </p>
+          <p className="text-xl md:text-2xl font-light mb-8 slide-up opacity-90">Your trusted partner for exceptional real estate services. Discover your dream property with Welcome Realtor.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center slide-up">
             <Button size="lg" variant="default" className="bg-accent" asChild>
               <Link to="/contact">
@@ -78,9 +73,8 @@ const Index = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {features.map((feature, index) => {
-              const Icon = feature.icon;
-              return (
-                <Card key={index} className="border-border shadow-lg transition-shadow duration-300">
+            const Icon = feature.icon;
+            return <Card key={index} className="border-border shadow-lg transition-shadow duration-300">
                   <CardContent className="p-8 text-center">
                     <div className="w-16 h-16 mx-auto mb-6 bg-accent/10 rounded-full flex items-center justify-center">
                       <Icon className="h-8 w-8 text-accent" />
@@ -92,9 +86,8 @@ const Index = () => {
                       {feature.description}
                     </p>
                   </CardContent>
-                </Card>
-              );
-            })}
+                </Card>;
+          })}
           </div>
         </div>
       </section>
@@ -103,16 +96,14 @@ const Index = () => {
       <section className="py-20 bg-secondary">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            {stats.map((stat, index) => (
-              <div key={index} className="space-y-2">
+            {stats.map((stat, index) => <div key={index} className="space-y-2">
                 <div className="text-4xl md:text-5xl font-heading font-bold text-accent">
                   {stat.number}
                 </div>
                 <div className="text-sm font-medium text-muted-foreground uppercase tracking-wide">
                   {stat.label}
                 </div>
-              </div>
-            ))}
+              </div>)}
           </div>
         </div>
       </section>
@@ -131,17 +122,10 @@ const Index = () => {
                 and client satisfaction drives everything we do.
               </p>
               <ul className="space-y-4 mb-8">
-                {[
-                  "Professional expertise in residential and commercial properties",
-                  "Comprehensive market knowledge and insights",
-                  "Personalized service tailored to your unique needs",
-                  "Strong network of industry professionals"
-                ].map((item, index) => (
-                  <li key={index} className="flex items-start space-x-3">
+                {["Professional expertise in residential and commercial properties", "Comprehensive market knowledge and insights", "Personalized service tailored to your unique needs", "Strong network of industry professionals"].map((item, index) => <li key={index} className="flex items-start space-x-3">
                     <CheckCircle className="h-5 w-5 text-accent mt-0.5 flex-shrink-0" />
                     <span className="text-muted-foreground">{item}</span>
-                  </li>
-                ))}
+                  </li>)}
               </ul>
               <Button variant="outline" asChild>
                 <Link to="/about">
@@ -199,8 +183,6 @@ const Index = () => {
           </Button>
         </div>
       </section>
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
