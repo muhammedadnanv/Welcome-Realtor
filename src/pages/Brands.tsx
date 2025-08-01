@@ -308,7 +308,7 @@ const Brands = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
             {/* Chairman */}
             <Card className="text-center bg-background shadow-lg transition-shadow">
               <CardContent className="p-8">
@@ -362,6 +362,25 @@ const Brands = () => {
                 <p className="text-muted-foreground">
                   Dynamic leader driving day-to-day operations and growth initiatives, 
                   committed to innovation and customer satisfaction across all business units.
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* Supervisor */}
+            <Card className="text-center bg-background shadow-lg transition-shadow">
+              <CardContent className="p-8">
+                <div className="mb-6 image-container">
+                  <img src="/lovable-uploads/9f4f3c0c-d32d-46d8-b52a-31f1bcd56845.png" alt="Mr Rahman Bevinja - Supervisor of Welcome Groups" className="w-32 h-32 rounded-full mx-auto object-cover shadow-lg team-image" loading="lazy" />
+                </div>
+                <h3 className="text-2xl font-heading font-bold text-primary mb-2">
+                  Mr Rahman Bevinja
+                </h3>
+                <p className="text-lg font-semibold text-accent mb-4">
+                  Supervisor
+                </p>
+                <p className="text-muted-foreground">
+                  Dedicated supervisor ensuring quality standards and operational efficiency 
+                  across all Welcome Group divisions with attention to detail and excellence.
                 </p>
               </CardContent>
             </Card>
