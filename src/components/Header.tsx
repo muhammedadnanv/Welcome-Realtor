@@ -29,7 +29,7 @@ const Header = () => {
             <img 
               src="/lovable-uploads/dee13c0c-920d-4e30-af96-1a1272dc5dce.png" 
               alt="Welcome Groups - Real Estate Excellence" 
-              className="h-12 w-auto"
+              className="h-10 sm:h-12 w-auto brand-image"
               loading="eager"
             />
           </Link>

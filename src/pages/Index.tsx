@@ -33,7 +33,7 @@ const Index = () => {
   return <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
+        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat hero-image" style={{
         backgroundImage: `url(${heroImage})`
       }} />
         <div className="absolute inset-0 bg-primary/60" />

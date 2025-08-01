@@ -137,11 +137,11 @@ const Brands = () => {
             <Card className="border-none bg-background shadow-lg transition-all duration-300">
               <CardContent className="p-8">
                 <div className="flex items-center mb-6">
-                  <div className="w-20 h-20 mr-6 flex items-center justify-center">
+                  <div className="w-20 h-20 mr-6 flex items-center justify-center image-container">
                     <img 
                       src="/welcome-rental-cars-logo.png" 
                       alt="Welcome Rental Cars Logo - Premium car rental services" 
-                      className="max-w-full max-h-full object-contain"
+                      className="max-w-full max-h-full object-contain brand-image"
                       loading="lazy"
                       onError={(e) => {
                         (e.target as HTMLImageElement).style.display = 'none';
@@ -183,11 +183,11 @@ const Brands = () => {
             <Card className="border-none bg-background shadow-lg transition-all duration-300">
               <CardContent className="p-8">
                 <div className="flex items-center mb-6">
-                  <div className="w-20 h-20 mr-6 flex items-center justify-center">
+                  <div className="w-20 h-20 mr-6 flex items-center justify-center image-container">
                     <img 
                       src="/welcome-tours-logo.png" 
                       alt="Welcome International Tours and Travels Logo - Travel and tourism services" 
-                      className="max-w-full max-h-full object-contain"
+                      className="max-w-full max-h-full object-contain brand-image"
                       loading="lazy"
                       onError={(e) => {
                         (e.target as HTMLImageElement).style.display = 'none';
@@ -303,7 +303,7 @@ const Brands = () => {
                   <img 
                     src="/welcome-group-logo.png" 
                     alt="Welcome Group Logo - Parent company umbrella brand" 
-                    className="h-24 w-auto object-contain"
+                    className="h-24 w-auto object-contain brand-image"
                     loading="lazy"
                     onError={(e) => {
                       (e.target as HTMLImageElement).style.display = 'none';
@@ -342,11 +342,11 @@ const Brands = () => {
             {/* Chairman */}
             <Card className="text-center bg-background shadow-lg transition-shadow">
               <CardContent className="p-8">
-                <div className="mb-6">
+                <div className="mb-6 image-container">
                   <img 
                     src={muhammadWelcome} 
                     alt="Muhammad Welcome - Chairman of Welcome Groups" 
-                    className="w-32 h-32 rounded-full mx-auto object-cover shadow-lg"
+                    className="w-32 h-32 rounded-full mx-auto object-cover shadow-lg team-image"
                     loading="lazy"
                   />
                 </div>
@@ -366,11 +366,11 @@ const Brands = () => {
             {/* Director */}
             <Card className="text-center bg-background shadow-lg transition-shadow">
               <CardContent className="p-8">
-                <div className="mb-6">
+                <div className="mb-6 image-container">
                   <img 
                     src={sabirChabu} 
                     alt="Sabir Chabu - Director of Welcome Groups" 
-                    className="w-32 h-32 rounded-full mx-auto object-cover shadow-lg"
+                    className="w-32 h-32 rounded-full mx-auto object-cover shadow-lg team-image"
                     loading="lazy"
                   />
                 </div>
@@ -390,11 +390,11 @@ const Brands = () => {
             {/* Managing Director */}
             <Card className="text-center bg-background shadow-lg transition-shadow">
               <CardContent className="p-8">
-                <div className="mb-6">
+                <div className="mb-6 image-container">
                   <img 
                     src={samsiWelcome} 
                     alt="Samsi Welcome - Managing Director of Welcome Groups" 
-                    className="w-32 h-32 rounded-full mx-auto object-cover shadow-lg"
+                    className="w-32 h-32 rounded-full mx-auto object-cover shadow-lg team-image"
                     loading="lazy"
                   />
                 </div>

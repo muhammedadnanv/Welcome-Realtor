@@ -9,12 +9,12 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground",
+        default: "bg-white text-brand-primary border border-brand-primary",
         destructive: "bg-destructive text-destructive-foreground",
-        outline: "border border-input bg-background",
-        secondary: "bg-secondary text-secondary-foreground",
-        ghost: "bg-transparent",
-        link: "text-primary underline-offset-4",
+        outline: "border border-brand-primary bg-white text-brand-primary",
+        secondary: "bg-white text-brand-primary border border-brand-primary",
+        ghost: "bg-transparent text-brand-primary",
+        link: "text-brand-primary underline-offset-4",
       },
       size: {
         default: "h-10 px-4 py-2",
