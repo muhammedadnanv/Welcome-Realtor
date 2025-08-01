@@ -71,6 +71,12 @@ const Contact = () => {
       description: "Visit our office"
     },
     {
+  icon: MapPin,
+  title: "Address",
+  details: ["Near Cherladuka Bus Stop", "Cherladuka, Kasaragod, Kerala"],
+  description: "Visit our Welcome Properties office"
+}, 
+    {
       icon: Clock,
       title: "Business Hours",
       details: ["Monday - Friday: 9:00 AM - 6:00 PM", "Saturday: 10:00 AM - 4:00 PM", "Sunday: Closed"],
