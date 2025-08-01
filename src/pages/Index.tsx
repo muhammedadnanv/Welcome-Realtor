@@ -50,9 +50,7 @@ const Index = () => {
               </Link>
             </Button>
             <Button size="lg" variant="outline" className="border-white text-white" asChild>
-              <Link to="/about">
-                Learn More
-              </Link>
+              
             </Button>
           </div>
         </div>
