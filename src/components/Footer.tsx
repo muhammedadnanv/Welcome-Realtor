@@ -66,7 +66,17 @@ const Footer = () => {
             <p className="text-primary-foreground/60 text-sm">
               © 2024 Welcome Groups. All rights reserved.
             </p>
-            
+            <p className="text-primary-foreground/60 text-sm">
+              Website engineered{" "}
+              <a 
+                href="https://adwebcomicagency.vercel.app/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-accent hover:text-accent/80 transition-colors"
+              >
+                Ad web Comic Agency
+              </a>
+            </p>
           </div>
         </div>
       </div>
