@@ -29,9 +29,9 @@ const About = () => {
 
   const timeline = [
     {
-      year: "2008",
+      year: "1993 ",
       title: "Company Founded",
-      description: "Welcome Groups was established with a vision to transform real estate services."
+      description: "Started book shop Muhammed welcomes the 'Welcome Groups' name, presented by Sayd Kumbul Thangal."
     },
     {
       year: "2012",
