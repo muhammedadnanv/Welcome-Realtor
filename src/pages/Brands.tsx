@@ -126,7 +126,7 @@ const Brands = () => {
               <CardContent className="p-8">
                 <div className="flex items-center mb-6">
                   <div className="w-20 h-20 mr-6 flex items-center justify-center image-container">
-                    <img src="/welcome-rental-cars-logo.png" alt="Welcome Rental Cars Logo - Premium car rental services" className="max-w-full max-h-full object-contain brand-image" loading="lazy" onError={e => {
+                    <img src="https://i.ibb.co/Kp6qV16j/1.jpg" alt="Welcome Rental Cars Logo - Premium car rental services" className="max-w-full max-h-full object-contain brand-image" loading="lazy" onError={e => {
                     (e.target as HTMLImageElement).style.display = 'none';
                   }} />
                   </div>
@@ -166,7 +166,7 @@ const Brands = () => {
               <CardContent className="p-8">
                 <div className="flex items-center mb-6">
                   <div className="w-20 h-20 mr-6 flex items-center justify-center image-container">
-                    <img src="/welcome-tours-logo.png" alt="Welcome International Tours and Travels Logo - Travel and tourism services" className="max-w-full max-h-full object-contain brand-image" loading="lazy" onError={e => {
+                    <img src="https://i.ibb.co/rfQNQ3TW/3.jpg" alt="Welcome International Tours and Travels Logo - Travel and tourism services" className="max-w-full max-h-full object-contain brand-image" loading="lazy" onError={e => {
                     (e.target as HTMLImageElement).style.display = 'none';
                   }} />
                   </div>
@@ -276,7 +276,7 @@ const Brands = () => {
             <Card className="p-8 text-center bg-background shadow-lg">
               <CardContent className="space-y-6">
                 <div className="flex justify-center">
-                  <img src="/welcome-group-logo.png" alt="Welcome Group Logo - Parent company umbrella brand" className="h-24 w-auto object-contain brand-image" loading="lazy" onError={e => {
+                  <img src="https://i.ibb.co/Q3SVbmND/0-1-1.jpg" alt="Welcome Group Logo - Parent company umbrella brand" className="h-24 w-auto object-contain brand-image" loading="lazy" onError={e => {
                   (e.target as HTMLImageElement).style.display = 'none';
                 }} />
                 </div>
