@@ -4,56 +4,46 @@ import { ExternalLink, Building, Briefcase, Home, Store, Wrench, Users } from "l
 import muhammadWelcome from "@/assets/muhammad-welcome.jpg";
 import sabirChabu from "@/assets/sabir-chabu.jpg";
 import samsiWelcome from "@/assets/samsi-welcome.jpg";
-
 const Brands = () => {
-  const brands = [
-    {
-      name: "Welcome Realtors",
-      category: "Real Estate",
-      description: "Our flagship real estate division providing comprehensive residential and commercial property services.",
-      icon: Building,
-      services: ["Residential Sales", "Commercial Properties", "Property Management", "Investment Consulting"],
-      featured: true
-    },
-    {
-      name: "Welcome Construction",
-      category: "Construction & Development",
-      description: "Full-service construction company specializing in residential and commercial building projects.",
-      icon: Wrench,
-      services: ["New Construction", "Renovations", "Commercial Building", "Project Management"]
-    },
-    {
-      name: "Welcome Property Management",
-      category: "Property Services",
-      description: "Professional property management services for residential and commercial property owners.",
-      icon: Home,
-      services: ["Tenant Management", "Maintenance Services", "Rent Collection", "Property Marketing"]
-    },
-    {
-      name: "Welcome Business Solutions",
-      category: "Business Services",
-      description: "Comprehensive business consulting and support services for entrepreneurs and established businesses.",
-      icon: Briefcase,
-      services: ["Business Consulting", "Financial Planning", "Marketing Support", "Legal Services"]
-    },
-    {
-      name: "Welcome Retail",
-      category: "Retail & Commerce",
-      description: "Retail development and management focusing on creating vibrant commercial spaces.",
-      icon: Store,
-      services: ["Retail Development", "Tenant Relations", "Marketing Services", "Space Planning"]
-    },
-    {
-      name: "Welcome Community",
-      category: "Community Development",
-      description: "Dedicated to building stronger communities through various development and social initiatives.",
-      icon: Users,
-      services: ["Community Planning", "Social Programs", "Event Management", "Neighborhood Development"]
-    }
-  ];
-
-  return (
-    <div className="min-h-screen">
+  const brands = [{
+    name: "Welcome Realtors",
+    category: "Real Estate",
+    description: "Our flagship real estate division providing comprehensive residential and commercial property services.",
+    icon: Building,
+    services: ["Residential Sales", "Commercial Properties", "Property Management", "Investment Consulting"],
+    featured: true
+  }, {
+    name: "Welcome Construction",
+    category: "Construction & Development",
+    description: "Full-service construction company specializing in residential and commercial building projects.",
+    icon: Wrench,
+    services: ["New Construction", "Renovations", "Commercial Building", "Project Management"]
+  }, {
+    name: "Welcome Property Management",
+    category: "Property Services",
+    description: "Professional property management services for residential and commercial property owners.",
+    icon: Home,
+    services: ["Tenant Management", "Maintenance Services", "Rent Collection", "Property Marketing"]
+  }, {
+    name: "Welcome Business Solutions",
+    category: "Business Services",
+    description: "Comprehensive business consulting and support services for entrepreneurs and established businesses.",
+    icon: Briefcase,
+    services: ["Business Consulting", "Financial Planning", "Marketing Support", "Legal Services"]
+  }, {
+    name: "Welcome Retail",
+    category: "Retail & Commerce",
+    description: "Retail development and management focusing on creating vibrant commercial spaces.",
+    icon: Store,
+    services: ["Retail Development", "Tenant Relations", "Marketing Services", "Space Planning"]
+  }, {
+    name: "Welcome Community",
+    category: "Community Development",
+    description: "Dedicated to building stronger communities through various development and social initiatives.",
+    icon: Users,
+    services: ["Community Planning", "Social Programs", "Event Management", "Neighborhood Development"]
+  }];
+  return <div className="min-h-screen">
       {/* Hero Section */}
       <section className="py-20 bg-hero-gradient text-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -108,11 +98,9 @@ const Brands = () => {
                   outstanding results for our clients.
                 </p>
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                  {brands[0].services.map((service, index) => (
-                    <div key={index} className="text-sm text-primary font-medium bg-background/60 rounded-lg px-3 py-2 text-center">
+                  {brands[0].services.map((service, index) => <div key={index} className="text-sm text-primary font-medium bg-background/60 rounded-lg px-3 py-2 text-center">
                       {service}
-                    </div>
-                  ))}
+                    </div>)}
                 </div>
               </CardContent>
             </Card>
@@ -138,15 +126,9 @@ const Brands = () => {
               <CardContent className="p-8">
                 <div className="flex items-center mb-6">
                   <div className="w-20 h-20 mr-6 flex items-center justify-center image-container">
-                    <img 
-                      src="/welcome-rental-cars-logo.png" 
-                      alt="Welcome Rental Cars Logo - Premium car rental services" 
-                      className="max-w-full max-h-full object-contain brand-image"
-                      loading="lazy"
-                      onError={(e) => {
-                        (e.target as HTMLImageElement).style.display = 'none';
-                      }}
-                    />
+                    <img src="/welcome-rental-cars-logo.png" alt="Welcome Rental Cars Logo - Premium car rental services" className="max-w-full max-h-full object-contain brand-image" loading="lazy" onError={e => {
+                    (e.target as HTMLImageElement).style.display = 'none';
+                  }} />
                   </div>
                   <div>
                     <div className="text-xs font-medium text-muted-foreground uppercase tracking-wide mb-1">
@@ -184,15 +166,9 @@ const Brands = () => {
               <CardContent className="p-8">
                 <div className="flex items-center mb-6">
                   <div className="w-20 h-20 mr-6 flex items-center justify-center image-container">
-                    <img 
-                      src="/welcome-tours-logo.png" 
-                      alt="Welcome International Tours and Travels Logo - Travel and tourism services" 
-                      className="max-w-full max-h-full object-contain brand-image"
-                      loading="lazy"
-                      onError={(e) => {
-                        (e.target as HTMLImageElement).style.display = 'none';
-                      }}
-                    />
+                    <img src="/welcome-tours-logo.png" alt="Welcome International Tours and Travels Logo - Travel and tourism services" className="max-w-full max-h-full object-contain brand-image" loading="lazy" onError={e => {
+                    (e.target as HTMLImageElement).style.display = 'none';
+                  }} />
                   </div>
                   <div>
                     <div className="text-xs font-medium text-muted-foreground uppercase tracking-wide mb-1">
@@ -300,15 +276,9 @@ const Brands = () => {
             <Card className="p-8 text-center bg-background shadow-lg">
               <CardContent className="space-y-6">
                 <div className="flex justify-center">
-                  <img 
-                    src="/welcome-group-logo.png" 
-                    alt="Welcome Group Logo - Parent company umbrella brand" 
-                    className="h-24 w-auto object-contain brand-image"
-                    loading="lazy"
-                    onError={(e) => {
-                      (e.target as HTMLImageElement).style.display = 'none';
-                    }}
-                  />
+                  <img src="/welcome-group-logo.png" alt="Welcome Group Logo - Parent company umbrella brand" className="h-24 w-auto object-contain brand-image" loading="lazy" onError={e => {
+                  (e.target as HTMLImageElement).style.display = 'none';
+                }} />
                 </div>
                 <h3 className="text-3xl font-heading font-bold text-primary">
                   Welcome Group
@@ -343,12 +313,7 @@ const Brands = () => {
             <Card className="text-center bg-background shadow-lg transition-shadow">
               <CardContent className="p-8">
                 <div className="mb-6 image-container">
-                  <img 
-                    src={muhammadWelcome} 
-                    alt="Muhammad Welcome - Chairman of Welcome Groups" 
-                    className="w-32 h-32 rounded-full mx-auto object-cover shadow-lg team-image"
-                    loading="lazy"
-                  />
+                  <img src={muhammadWelcome} alt="Muhammad Welcome - Chairman of Welcome Groups" className="w-32 h-32 rounded-full mx-auto object-cover shadow-lg team-image" loading="lazy" />
                 </div>
                 <h3 className="text-2xl font-heading font-bold text-primary mb-2">
                   Muhammad Welcome
@@ -367,12 +332,7 @@ const Brands = () => {
             <Card className="text-center bg-background shadow-lg transition-shadow">
               <CardContent className="p-8">
                 <div className="mb-6 image-container">
-                  <img 
-                    src={sabirChabu} 
-                    alt="Sabir Chabu - Director of Welcome Groups" 
-                    className="w-32 h-32 rounded-full mx-auto object-cover shadow-lg team-image"
-                    loading="lazy"
-                  />
+                  <img src={sabirChabu} alt="Sabir Chabu - Director of Welcome Groups" className="w-32 h-32 rounded-full mx-auto object-cover shadow-lg team-image" loading="lazy" />
                 </div>
                 <h3 className="text-2xl font-heading font-bold text-primary mb-2">
                   Sabir Chabu
@@ -391,12 +351,7 @@ const Brands = () => {
             <Card className="text-center bg-background shadow-lg transition-shadow">
               <CardContent className="p-8">
                 <div className="mb-6 image-container">
-                  <img 
-                    src={samsiWelcome} 
-                    alt="Samsi Welcome - Managing Director of Welcome Groups" 
-                    className="w-32 h-32 rounded-full mx-auto object-cover shadow-lg team-image"
-                    loading="lazy"
-                  />
+                  <img src={samsiWelcome} alt="Samsi Welcome - Managing Director of Welcome Groups" className="w-32 h-32 rounded-full mx-auto object-cover shadow-lg team-image" loading="lazy" />
                 </div>
                 <h3 className="text-2xl font-heading font-bold text-primary mb-2">
                   Samsi Welcome
@@ -428,14 +383,10 @@ const Brands = () => {
             <Button size="lg" variant="secondary">
               Contact Welcome Realtors
             </Button>
-            <Button size="lg" variant="outline" className="border-white text-white">
-              Explore All Services
-            </Button>
+            
           </div>
         </div>
       </section>
-    </div>
-  );
+    </div>;
 };
-
 export default Brands;
