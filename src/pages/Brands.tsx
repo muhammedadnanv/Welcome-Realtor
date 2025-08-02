@@ -313,7 +313,7 @@ const Brands = () => {
             <Card className="text-center bg-background shadow-lg transition-shadow">
               <CardContent className="p-8">
                 <div className="mb-6 image-container">
-                  <img src={muhammadWelcome} alt="Muhammad Welcome - Chairman of Welcome Groups" className="w-32 h-32 rounded-full mx-auto object-cover shadow-lg team-image" loading="lazy" />
+                  <img src="https://i.ibb.co/zVvQKCJ1/Whats-App-Image-2025-08-02-at-14-33-11.jpg" alt="Muhammad Welcome - Chairman of Welcome Groups" className="w-32 h-32 rounded-full mx-auto object-cover shadow-lg team-image" loading="lazy" />
                 </div>
                 <h3 className="text-2xl font-heading font-bold text-primary mb-2">
                   Muhammad Welcome
