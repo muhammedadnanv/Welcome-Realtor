@@ -126,7 +126,7 @@ const Brands = () => {
               <CardContent className="p-8">
                 <div className="flex items-center mb-6">
                   <div className="w-20 h-20 mr-6 flex items-center justify-center image-container">
-                    <img src="src/assets/Screenshot 2025-08-03 211403.png" alt="Welcome Rental Cars Logo - Premium car rental services" className="max-w-full max-h-full object-contain brand-image" loading="lazy" onError={e => {
+                    <img src="/lovable-uploads/3b6f33c1-641c-4c23-9595-a94c24a80c4e.png" alt="Welcome Rental Cars Logo - Premium car rental services" className="max-w-full max-h-full object-contain brand-image" loading="lazy" onError={e => {
                     (e.target as HTMLImageElement).style.display = 'none';
                   }} />
                   </div>
@@ -166,7 +166,7 @@ const Brands = () => {
               <CardContent className="p-8">
                 <div className="flex items-center mb-6">
                   <div className="w-20 h-20 mr-6 flex items-center justify-center image-container">
-                    <img src="src/assets/Screenshot 2025-08-03 211410.png" alt="Welcome International Tours and Travels Logo - Travel and tourism services" className="max-w-full max-h-full object-contain brand-image" loading="lazy" onError={e => {
+                    <img src="/lovable-uploads/e69dd160-c8ec-4e33-a71c-c8f411ab0c68.png" alt="Welcome International Tours and Travels Logo - Travel and tourism services" className="max-w-full max-h-full object-contain brand-image" loading="lazy" onError={e => {
                     (e.target as HTMLImageElement).style.display = 'none';
                   }} />
                   </div>
