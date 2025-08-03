@@ -208,7 +208,6 @@ Brand Colors:
       transform: translateY(0);
     }
   }
-}
 
 /* Widgetify Core Styles - Responsive & Mobile-First */
 .widgetify-widget {
@@ -413,5 +412,4 @@ Brand Colors:
   .upi-gateway-note {
     font-size: 11px !important;
   }
-}
 }
