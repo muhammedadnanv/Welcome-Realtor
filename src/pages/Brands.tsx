@@ -276,7 +276,7 @@ const Brands = () => {
             <Card className="p-8 text-center bg-background shadow-lg">
               <CardContent className="space-y-6">
                 <div className="flex justify-center">
-                  <img src="https://i.ibb.co/Q3SVbmND/0-1-1.jpg" alt="Welcome Group Logo - Parent company umbrella brand" className="h-24 w-auto object-contain brand-image" loading="lazy" onError={e => {
+                  <img src="/lovable-uploads/f8d90134-d871-4970-bd4b-1d36e0c4446e.png" alt="Welcome Group Logo - Parent company umbrella brand" className="h-24 w-auto object-contain brand-image" loading="lazy" onError={e => {
                   (e.target as HTMLImageElement).style.display = 'none';
                 }} />
                 </div>
