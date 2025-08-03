@@ -332,7 +332,7 @@ const Brands = () => {
             <Card className="text-center bg-background shadow-lg transition-shadow">
               <CardContent className="p-8">
                 <div className="mb-6 image-container">
-                  <img src="https://i.postimg.cc/qMNhYXFF/sabirchabu.jpg" alt="Sabir Chabu - Director of Welcome Groups" className="w-32 h-32 rounded-full mx-auto object-cover shadow-lg team-image" loading="lazy" />
+                  <img src="/lovable-uploads/742bacc6-b5a0-470f-a882-610e6d6a8487.png" alt="Sabir Chabu - Director of Welcome Groups" className="w-32 h-32 rounded-full mx-auto object-cover shadow-lg team-image" loading="lazy" />
                 </div>
                 <h3 className="text-2xl font-heading font-bold text-primary mb-2">
                   Sabir Chabu
@@ -351,7 +351,7 @@ const Brands = () => {
             <Card className="text-center bg-background shadow-lg transition-shadow">
               <CardContent className="p-8">
                 <div className="mb-6 image-container">
-                  <img src= "https://i.postimg.cc/pVqz3dLm/samsiwelcome.jpg" alt="Samsi Welcome - Managing Director of Welcome Groups" className="w-32 h-32 rounded-full mx-auto object-cover shadow-lg team-image" loading="lazy" />
+                  <img src="/lovable-uploads/6c4d8118-04cc-4d47-b27d-9284d8ae52bc.png" alt="Samsi Welcome - Managing Director of Welcome Groups" className="w-32 h-32 rounded-full mx-auto object-cover shadow-lg team-image" loading="lazy" />
                 </div>
                 <h3 className="text-2xl font-heading font-bold text-primary mb-2">
                   Samsi Welcome
