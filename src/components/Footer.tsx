@@ -7,7 +7,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="text-2xl font-heading font-bold">
-              Welcome <span className="text-accent">Realtor</span>
+              Welcome <span className="text-accent">Properties</span>
             </div>
             <p className="text-primary-foreground/80 text-sm leading-relaxed">
               Your trusted partner in real estate excellence. We provide professional
@@ -68,12 +68,7 @@ const Footer = () => {
             </p>
             <p className="text-primary-foreground/60 text-sm">
               Website engineered{" "}
-              <a 
-                href="https://adwebcomicagency.vercel.app/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-accent hover:text-accent/80 transition-colors"
-              >
+              <a href="https://adwebcomicagency.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-accent hover:text-accent/80 transition-colors">
                 Ad web Comic Agency
               </a>
             </p>
