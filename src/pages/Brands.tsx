@@ -120,7 +120,7 @@ const Brands = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Welcome Rental Cars */}
             <Card className="border-none bg-background shadow-lg transition-all duration-300">
               <CardContent className="p-8">
@@ -197,6 +197,52 @@ const Brands = () => {
 
                 <Button variant="outline" size="sm" className="w-full">
                   Learn More <ExternalLink className="ml-2 h-4 w-4" />
+                </Button>
+              </CardContent>
+            </Card>
+
+            {/* The Welco Celebration Studio - Coming Soon */}
+            <Card className="border-none bg-gradient-to-br from-accent/5 to-accent/10 shadow-lg transition-all duration-300 relative overflow-hidden">
+              <CardContent className="p-8">
+                <div className="absolute top-4 right-4">
+                  <span className="bg-accent text-white text-xs font-medium px-3 py-1 rounded-full">
+                    Coming Soon
+                  </span>
+                </div>
+                
+                <div className="flex items-center mb-6">
+                  <div className="w-20 h-20 mr-6 flex items-center justify-center image-container">
+                    <img src="/lovable-uploads/f5d0b734-5b8b-412d-9477-35a439a3ba4e.png" alt="The Welco Celebration Studio Logo - Event planning and celebration services" className="max-w-full max-h-full object-contain brand-image" loading="lazy" onError={e => {
+                    (e.target as HTMLImageElement).style.display = 'none';
+                  }} />
+                  </div>
+                  <div>
+                    <div className="text-xs font-medium text-muted-foreground uppercase tracking-wide mb-1">
+                      Event Planning & Celebrations
+                    </div>
+                    <h3 className="text-xl font-heading font-bold text-primary">
+                      The Welco Celebration Studio
+                    </h3>
+                  </div>
+                </div>
+                
+                <p className="text-muted-foreground mb-6 leading-relaxed">
+                  Next Project Coming Soon - Our upcoming celebration and event planning studio that will bring 
+                  your special moments to life with creativity, elegance, and attention to detail.
+                </p>
+
+                <div className="space-y-2 mb-6">
+                  <h4 className="font-semibold text-primary text-sm">Planned Services:</h4>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="text-xs bg-accent/10 text-accent px-2 py-1 rounded-full">Event Planning</span>
+                    <span className="text-xs bg-accent/10 text-accent px-2 py-1 rounded-full">Wedding Services</span>
+                    <span className="text-xs bg-accent/10 text-accent px-2 py-1 rounded-full">Corporate Events</span>
+                    <span className="text-xs bg-accent/10 text-accent px-2 py-1 rounded-full">Celebrations</span>
+                  </div>
+                </div>
+
+                <Button variant="outline" size="sm" className="w-full" disabled>
+                  Coming Soon <ExternalLink className="ml-2 h-4 w-4" />
                 </Button>
               </CardContent>
             </Card>
