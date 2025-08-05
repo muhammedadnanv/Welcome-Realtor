@@ -155,9 +155,7 @@ const Brands = () => {
                   </div>
                 </div>
 
-                <Button variant="outline" size="sm" className="w-full">
-                  Learn More <ExternalLink className="ml-2 h-4 w-4" />
-                </Button>
+                
               </CardContent>
             </Card>
 
@@ -195,9 +193,7 @@ const Brands = () => {
                   </div>
                 </div>
 
-                <Button variant="outline" size="sm" className="w-full">
-                  Learn More <ExternalLink className="ml-2 h-4 w-4" />
-                </Button>
+                
               </CardContent>
             </Card>
 
@@ -241,9 +237,7 @@ const Brands = () => {
                   </div>
                 </div>
 
-                <Button variant="outline" size="sm" className="w-full" disabled>
-                  Coming Soon <ExternalLink className="ml-2 h-4 w-4" />
-                </Button>
+                
               </CardContent>
             </Card>
           </div>
