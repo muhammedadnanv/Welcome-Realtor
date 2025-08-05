@@ -42,7 +42,7 @@ const Index = () => {
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-heading font-bold mb-6 fade-in">
             Welcome to <span className="text-accent">Excellence</span> in Real Estate
           </h1>
-          <p className="text-xl md:text-2xl font-light mb-8 slide-up opacity-90">Your trusted partner for exceptional real estate services. Discover your dream property with Welcome Realtor.</p>
+          <p className="text-xl md:text-2xl font-light mb-8 slide-up opacity-90">Your trusted partner for exceptional real estate services. Discover your dream property with Welcome Properties.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center slide-up">
             <Button size="lg" variant="default" className="bg-accent" asChild>
               <Link to="/contact">

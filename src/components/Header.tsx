@@ -27,8 +27,8 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2" aria-label="Welcome Groups Home">
             <img 
-              src="/lovable-uploads/dee13c0c-920d-4e30-af96-1a1272dc5dce.png" 
-              alt="Welcome Groups - Real Estate Excellence" 
+              src="/lovable-uploads/952c238a-582f-4503-bbd0-5467f443e69c.png" 
+              alt="Welcome Properties - Real Estate Excellence" 
               className="h-10 sm:h-12 w-auto brand-image"
               loading="eager"
             />

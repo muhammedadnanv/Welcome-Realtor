@@ -6,7 +6,7 @@ import sabirChabu from "@/assets/sabir-chabu.jpg";
 import samsiWelcome from "@/assets/samsi-welcome.jpg";
 const Brands = () => {
   const brands = [{
-    name: "Welcome Realtors",
+    name: "Welcome Properties",
     category: "Real Estate",
     description: "Our flagship real estate division providing comprehensive residential and commercial property services.",
     icon: Building,
@@ -87,12 +87,12 @@ const Brands = () => {
                       Flagship Brand
                     </div>
                     <h3 className="text-3xl font-heading font-bold text-primary">
-                      Welcome Realtors
+                      Welcome Properties
                     </h3>
                   </div>
                 </div>
                 <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                  Our flagship real estate division that started it all. Welcome Realtors has been 
+                  Our flagship real estate division that started it all. Welcome Properties has been 
                   the foundation of our success, providing exceptional residential and commercial 
                   real estate services with a focus on building lasting relationships and delivering 
                   outstanding results for our clients.
@@ -400,7 +400,7 @@ const Brands = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" variant="secondary">
-              Contact Welcome Realtors
+              Contact Welcome Properties
             </Button>
             
           </div>
